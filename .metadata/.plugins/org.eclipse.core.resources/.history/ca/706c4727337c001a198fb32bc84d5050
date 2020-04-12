@@ -1,0 +1,13 @@
+'''
+Created on 2020/04/12
+
+@author: seal0
+'''
+def main:
+    
+    print("hello")
+
+
+
+if __name__ == '__main__':
+    pass

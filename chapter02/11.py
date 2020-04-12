@@ -12,4 +12,3 @@ with open("popular-names.txt") as f:
     names_data = list(map(lambda x:x.replace("\t", " "), f.read().strip().split("\n"))) #readでファイル終端まで読み込み、stripで空白文字を削除する
 
 print(names_data)
-print(len(names_data))

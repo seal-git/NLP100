@@ -1,0 +1,9 @@
+'''
+Created on 2020/04/12
+
+@author: seal0
+'''
+import numpy as np
+
+with open("popular-names.txt") as f:
+    names_data_map = map(lambda x:x.split(" "), f.read().strip().split("\n"))

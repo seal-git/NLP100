@@ -1,0 +1,27 @@
+-- VERSION_5
+-- START DISKCACHE_2
+/home/seal0/eclipse-workspace/nlp100/.metadata/.plugins/org.eclipse.core.resources/.projects/chapter02/com.python.pydev.analysis/v2_indexcache
+11|1586670418877185000|/home/seal0/eclipse-workspace/nlp100/chapter02/11.py
+12|1586670418877185000|/home/seal0/eclipse-workspace/nlp100/chapter02/12.py
+13|1586670418877185000|/home/seal0/eclipse-workspace/nlp100/chapter02/13.py
+10|1586670418877185000|/home/seal0/eclipse-workspace/nlp100/chapter02/10.py
+-- END DISKCACHE
+-- START DICTIONARY
+8
+6=11
+1=/home/seal0/eclipse-workspace/nlp100/chapter02/13.py
+3=/home/seal0/eclipse-workspace/nlp100/chapter02/12.py
+4=12
+2=13
+5=/home/seal0/eclipse-workspace/nlp100/chapter02/11.py
+7=/home/seal0/eclipse-workspace/nlp100/chapter02/10.py
+8=10
+-- END DICTIONARY
+-- START TREE 1
+2
+col|3|col2!1^15#5*19@col1_and_col2!1^17#1*19@col1!1^12#5*19@
+nam|3|names_data!3^12#5*35@names_data!5^12#5*51@names_data!7^9#5*67@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

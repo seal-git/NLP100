@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:10 main.py,org.eclipse.launchbar.core.descriptorType.default\:10 main.py (1),org.eclipse.launchbar.core.descriptorType.default\:10 01.py,org.eclipse.launchbar.core.descriptorType.default\:chapter02 10.py,org.eclipse.launchbar.core.descriptorType.default\:chapter02 11.py,org.eclipse.launchbar.core.descriptorType.default\:chapter02 12.py,org.eclipse.launchbar.core.descriptorType.default\:chapter02 13.py
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:10\ main.py/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:10\ main.py/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

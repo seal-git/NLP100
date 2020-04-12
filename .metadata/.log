@@ -1,0 +1,1444 @@
+!SESSION 2020-04-12 01:39:41.700 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -data /home/seal0/eclipse-workspace/nlp100 -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.core 4 0 2020-04-12 01:39:43.219
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.core [199]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.lfs; version="[5.3.0,5.4.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.eclipse.jgit.transport.sshd; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.jgit.transport.sshd; bundle-symbolic-name="org.eclipse.jgit.ssh.apache"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; uses:="org.eclipse.jgit.transport,  org.apache.sshd.client.config.hosts,  org.apache.sshd.common.keyprovider,  org.eclipse.jgit.util,  org.apache.sshd.client.session,  org.apache.sshd.client.keyverifier"
+       org.eclipse.jgit.ssh.apache [287]
+         Unresolved requirement: Import-Package: net.i2p.crypto.eddsa; version="[0.3.0,0.4.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-04-12 01:39:43.235
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.ui [201]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.4.0,4.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.attributes; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.attributes; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; uses:="org.eclipse.jgit.lib"
+       org.eclipse.egit.core [199]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.lfs; version="[5.3.0,5.4.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.jgit.transport.sshd; version="[5.3.0,5.4.0)"
+           -> Export-Package: org.eclipse.jgit.transport.sshd; bundle-symbolic-name="org.eclipse.jgit.ssh.apache"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; uses:="org.eclipse.jgit.transport,  org.apache.sshd.client.config.hosts,  org.apache.sshd.common.keyprovider,  org.eclipse.jgit.util,  org.apache.sshd.client.session,  org.apache.sshd.client.keyverifier"
+              org.eclipse.jgit.ssh.apache [287]
+                Unresolved requirement: Import-Package: net.i2p.crypto.eddsa; version="[0.3.0,0.4.0)"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.util; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.synchronize; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.project; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.project; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.mylyn.github.ui,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize.dto; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.synchronize.dto; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.securestorage; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.securestorage; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.indexdiff; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.indexdiff; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.import,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.rebase; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.rebase; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.mylyn.ui,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.mylyn.github.ui,  org.eclipse.mylyn.github.core,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.storage; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.storage; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.core.test"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.gerrit; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.gerrit; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.emf.edit.ui 4 0 2020-04-12 01:39:43.235
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.emf.edit.ui [209]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jgit.ssh.apache 4 0 2020-04-12 01:39:43.380
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.ssh.apache [287]
+  Unresolved requirement: Import-Package: net.i2p.crypto.eddsa; version="[0.3.0,0.4.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.jreinfo.ui 4 0 2020-04-12 01:39:43.405
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.jreinfo.ui [415]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+       org.eclipse.oomph.ui [436]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+              org.eclipse.emf.edit.ui [209]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.p2.ui 4 0 2020-04-12 01:39:43.405
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.p2.ui [420]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+       org.eclipse.oomph.ui [436]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+              org.eclipse.emf.edit.ui [209]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.setup.editor 4 0 2020-04-12 01:39:43.420
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup.editor [430]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+       org.eclipse.emf.edit.ui [209]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.workingsets.editor; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.workingsets.editor; bundle-version="1.10.0.v20180904-1112"; singleton:="true"
+       org.eclipse.oomph.workingsets.editor [440]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.setup.ui; bundle-version="[1.13.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.setup.ui; bundle-version="1.13.0.v20190511-0841"; singleton:="true"
+       org.eclipse.oomph.setup.ui [434]
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.11.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+              org.eclipse.oomph.ui [436]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.jreinfo.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.jreinfo.ui; bundle-version="1.10.0.v20180706-1242"; singleton:="true"
+              org.eclipse.oomph.jreinfo.ui [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.p2.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.p2.ui; bundle-version="1.10.0.v20180829-1028"; singleton:="true"
+              org.eclipse.oomph.p2.ui [420]
+                Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.setup.ui 4 0 2020-04-12 01:39:43.420
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup.ui [434]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.11.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+       org.eclipse.oomph.ui [436]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+              org.eclipse.emf.edit.ui [209]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.jreinfo.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.jreinfo.ui; bundle-version="1.10.0.v20180706-1242"; singleton:="true"
+       org.eclipse.oomph.jreinfo.ui [415]
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.p2.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.p2.ui; bundle-version="1.10.0.v20180829-1028"; singleton:="true"
+       org.eclipse.oomph.p2.ui [420]
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.setup.ui.questionnaire 4 0 2020-04-12 01:39:43.421
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup.ui.questionnaire [435]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.setup.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.setup.ui; bundle-version="1.13.0.v20190511-0841"; singleton:="true"
+       org.eclipse.oomph.setup.ui [434]
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.11.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+              org.eclipse.oomph.ui [436]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+                     org.eclipse.emf.edit.ui [209]
+                       Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.jreinfo.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.jreinfo.ui; bundle-version="1.10.0.v20180706-1242"; singleton:="true"
+              org.eclipse.oomph.jreinfo.ui [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.p2.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.p2.ui; bundle-version="1.10.0.v20180829-1028"; singleton:="true"
+              org.eclipse.oomph.p2.ui [420]
+                Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.ui 4 0 2020-04-12 01:39:43.421
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.ui [436]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+       org.eclipse.emf.edit.ui [209]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.workingsets.editor 4 0 2020-04-12 01:39:43.443
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.workingsets.editor [440]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+       org.eclipse.oomph.ui [436]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+              org.eclipse.emf.edit.ui [209]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.python.pydev.shared_core 1 1 2020-04-12 01:41:38.819
+!MESSAGE Information about process of adding new interpreter:
+- Opening dialog to request executable (or jar).
+
+!STACK 0
+java.lang.RuntimeException: Information about process of adding new interpreter:
+- Opening dialog to request executable (or jar).
+
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor.getNewInputObject(AbstractInterpreterEditor.java:1043)
+	at org.python.copiedfromeclipsesrc.PythonListEditor.addPressed(PythonListEditor.java:142)
+	at org.python.copiedfromeclipsesrc.PythonListEditor$1.widgetSelected(PythonListEditor.java:259)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5783)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1411)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4579)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:214)
+	at org.python.pydev.ui.PyProjectPythonDetails$ProjectInterpreterAndGrammarConfig$2.widgetSelected(PyProjectPythonDetails.java:315)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5783)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1411)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1437)
+	at org.eclipse.swt.widgets.Widget.sendSelectionEvent(Widget.java:1566)
+	at org.eclipse.swt.widgets.Link.gtk_button_release_event(Link.java:394)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2187)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6764)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6035)
+	at org.eclipse.swt.internal.gtk.GTK._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(GTK.java:4135)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1407)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:1584)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4577)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:272)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:293)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:320)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:497)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:490)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:584)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:653)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:443)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$2(KeyBindingDispatcher.java:386)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1764)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1410)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1437)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1420)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1461)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:817)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3935)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:857)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2203)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6764)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6035)
+	at org.eclipse.swt.internal.gtk.GTK._gtk_widget_event(Native Method)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_widget_event(GTK.java:8393)
+	at org.eclipse.swt.browser.WebKit.JSDOMEventProc(WebKit.java:833)
+	at org.eclipse.swt.internal.gtk.GTK._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(GTK.java:4135)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1407)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:1584)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4577)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+
+!ENTRY org.python.pydev.shared_core 1 1 2020-04-12 01:41:42.638
+!MESSAGE - Ok, file is non-null. Getting info on:/usr/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python -u /home/seal0/.p2/pool/plugins/org.python.pydev.core_7.5.0.202001101138/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python -u /home/seal0/.p2/pool/plugins/org.python.pydev.core_7.5.0.202001101138/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python -u /home/seal0/.p2/pool/plugins/org.python.pydev.core_7.5.0.202001101138/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python</executable>
+<lib>/usr/lib64/python2.7</lib>
+<lib>/usr/lib64/python2.7/plat-linux2</lib>
+<lib>/usr/lib64/python2.7/lib-dynload</lib>
+<lib>/usr/lib64/python2.7/site-packages</lib>
+<lib>/usr/lib64/python2.7/site-packages/gtk-2.0</lib>
+<lib>/usr/lib/python2.7/site-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+
+!STACK 0
+java.lang.RuntimeException: - Ok, file is non-null. Getting info on:/usr/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /usr/bin/python -u /home/seal0/.p2/pool/plugins/org.python.pydev.core_7.5.0.202001101138/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /usr/bin/python -u /home/seal0/.p2/pool/plugins/org.python.pydev.core_7.5.0.202001101138/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /usr/bin/python -u /home/seal0/.p2/pool/plugins/org.python.pydev.core_7.5.0.202001101138/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/usr/bin/python</executable>
+<lib>/usr/lib64/python2.7</lib>
+<lib>/usr/lib64/python2.7/plat-linux2</lib>
+<lib>/usr/lib64/python2.7/lib-dynload</lib>
+<lib>/usr/lib64/python2.7/site-packages</lib>
+<lib>/usr/lib64/python2.7/site-packages/gtk-2.0</lib>
+<lib>/usr/lib/python2.7/site-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>27</value></string_substitution_var>
+</xml>
+
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor.getNewInputObject(AbstractInterpreterEditor.java:1043)
+	at org.python.copiedfromeclipsesrc.PythonListEditor.addPressed(PythonListEditor.java:142)
+	at org.python.copiedfromeclipsesrc.PythonListEditor$1.widgetSelected(PythonListEditor.java:261)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5783)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1411)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4579)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:214)
+	at org.python.pydev.ui.PyProjectPythonDetails$ProjectInterpreterAndGrammarConfig$2.widgetSelected(PyProjectPythonDetails.java:315)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5783)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1411)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1437)
+	at org.eclipse.swt.widgets.Widget.sendSelectionEvent(Widget.java:1566)
+	at org.eclipse.swt.widgets.Link.gtk_button_release_event(Link.java:394)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2187)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6764)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6035)
+	at org.eclipse.swt.internal.gtk.GTK._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(GTK.java:4135)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1407)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:1584)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4577)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.internal.handlers.WizardHandler$New.executeHandler(WizardHandler.java:272)
+	at org.eclipse.ui.internal.handlers.WizardHandler.execute(WizardHandler.java:293)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:294)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:320)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:254)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:173)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:156)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:497)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:490)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:213)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:308)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:584)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:653)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:443)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$2(KeyBindingDispatcher.java:386)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:96)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1764)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1410)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1437)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1420)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1461)
+	at org.eclipse.swt.widgets.Widget.gtk_key_press_event(Widget.java:817)
+	at org.eclipse.swt.widgets.Control.gtk_key_press_event(Control.java:3935)
+	at org.eclipse.swt.widgets.Composite.gtk_key_press_event(Composite.java:857)
+	at org.eclipse.swt.widgets.Widget.windowProc(Widget.java:2203)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:6764)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6035)
+	at org.eclipse.swt.internal.gtk.GTK._gtk_widget_event(Native Method)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_widget_event(GTK.java:8393)
+	at org.eclipse.swt.browser.WebKit.JSDOMEventProc(WebKit.java:833)
+	at org.eclipse.swt.internal.gtk.GTK._gtk_main_do_event(Native Method)
+	at org.eclipse.swt.internal.gtk.GTK.gtk_main_do_event(GTK.java:4135)
+	at org.eclipse.swt.widgets.Display.eventProc(Display.java:1407)
+	at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(Native Method)
+	at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(OS.java:1584)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4577)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+
+!ENTRY org.python.pydev.shared_core 1 1 2020-04-12 01:41:52.239
+!MESSAGE Restoring info for: /usr/bin/python
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /usr/bin/python
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:454)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:280)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:577)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1184)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: Expecting: /home/seal0/eclipse-workspace/nlp100/.metadata/.plugins/org.python.pydev/v1_bm109oo8jsa5gnqmc06ekl12p/modulesKeys to exist (and be a file).
+	at org.python.pydev.ast.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:296)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:400)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:452)
+	... 4 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2020-04-12 01:41:54.103
+!MESSAGE Finished restoring information for: /usr/bin/python at: /home/seal0/eclipse-workspace/nlp100/.metadata/.plugins/org.python.pydev/v1_bm109oo8jsa5gnqmc06ekl12p
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /usr/bin/python at: /home/seal0/eclipse-workspace/nlp100/.metadata/.plugins/org.python.pydev/v1_bm109oo8jsa5gnqmc06ekl12p
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:499)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:280)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:577)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor$13.run(AbstractInterpreterEditor.java:1184)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.python.pydev.shared_core 4 4 2020-04-12 01:41:54.335
+!MESSAGE Info: Rebuilding internal caches: /home/seal0/eclipse-workspace/nlp100/.metadata/.plugins/com.python.pydev.analysis/python_v1_bm109oo8jsa5gnqmc06ekl12p/python.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2020-04-12 01:42:39.658
+!MESSAGE Info: Rebuilding internal caches: /home/seal0/eclipse-workspace/nlp100/.metadata/.plugins/org.eclipse.core.resources/.projects/10/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.eclipse.ui 4 0 2020-04-12 01:57:38.329
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5927)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:349)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:474)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5783)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1411)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1437)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1416)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:220)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:5093)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4569)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.tm4e.ui.internal.menus.ThemeContribution.getContributionItems(ThemeContribution.java:59)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:150)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:731)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:813)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1222)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:203)
+	at sun.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 58 more
+
+!ENTRY org.python.pydev.shared_core 4 4 2020-04-12 04:47:52.662
+!MESSAGE Info: Rebuilding internal caches: /home/seal0/eclipse-workspace/nlp100/.metadata/.plugins/org.eclipse.core.resources/.projects/chapter02/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 2 2 2020-04-12 04:54:45.621
+!MESSAGE Warning: computed 10756 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:/home/seal0/eclipse-workspace/nlp100/chapter02/10.py activationToken:f qualifier:re isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 10756 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:/home/seal0/eclipse-workspace/nlp100/chapter02/10.py activationToken:f qualifier:re isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:214)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2014)
+	at java.util.Collections$SingletonSet.forEach(Collections.java:4767)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2013)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2010)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:575)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:500)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4582)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+
+!ENTRY org.python.pydev.shared_core 2 2 2020-04-12 05:55:40.182
+!MESSAGE Warning: computed 10755 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:/home/seal0/eclipse-workspace/nlp100/chapter02/11.py activationToken:x qualifier:re isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 10755 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:/home/seal0/eclipse-workspace/nlp100/chapter02/11.py activationToken:x qualifier:re isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:214)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2014)
+	at java.util.Collections$SingletonSet.forEach(Collections.java:4767)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2013)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2010)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:575)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:500)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$AutoAssistListener.lambda$0(ContentAssistant.java:380)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4582)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+
+!ENTRY org.python.pydev.shared_core 2 2 2020-04-12 06:01:29.211
+!MESSAGE Warning: computed 10024 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:/home/seal0/eclipse-workspace/nlp100/chapter02/12.py activationToken: qualifier:in isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 10024 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:/home/seal0/eclipse-workspace/nlp100/chapter02/12.py activationToken: qualifier:in isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:214)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2014)
+	at java.util.Collections$SingletonSet.forEach(Collections.java:4767)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2013)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2010)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:575)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:500)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:381)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4582)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+
+!ENTRY org.python.pydev.shared_core 2 2 2020-04-12 06:14:31.441
+!MESSAGE Warning: computed 10021 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:/home/seal0/eclipse-workspace/nlp100/chapter02/13.py activationToken: qualifier:in isInCalltip:false alreadyHasParams:false]
+!STACK 0
+java.lang.RuntimeException: Warning: computed 10021 completions (trimming to 10000).
+Request: CompletionRequest[ editorFile:/home/seal0/eclipse-workspace/nlp100/chapter02/13.py activationToken: qualifier:in isInCalltip:false alreadyHasParams:false]
+	at org.python.pydev.core.log.Log.logWarn(Log.java:49)
+	at org.python.pydev.ast.codecompletion.PyCodeCompletion.getCodeCompletionProposals(PyCodeCompletion.java:214)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.getPythonProposals(PythonCompletionProcessor.java:235)
+	at org.python.pydev.editor.codecompletion.PythonCompletionProcessor.computeCompletionProposals(PythonCompletionProcessor.java:169)
+	at org.python.pydev.editor.codecompletion.SimpleAssistProcessor.computeCompletionProposals(SimpleAssistProcessor.java:287)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.lambda$0(ContentAssistant.java:2014)
+	at java.util.Collections$SingletonSet.forEach(Collections.java:4767)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$2.run(ContentAssistant.java:2013)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:2010)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:575)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.lambda$0(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:500)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$1.run(CompletionProposalPopup.java:381)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4582)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+
+!ENTRY org.python.pydev.shared_core 1 1 2020-04-12 08:07:04.786
+!MESSAGE Not saving ast manager for: P/10. No write area available.
+!SESSION 2020-04-12 15:12:30.309 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.egit.core 4 0 2020-04-12 15:12:31.903
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.core [199]
+  Unresolved requirement: Import-Package: org.eclipse.jgit.lfs; version="[5.3.0,5.4.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.eclipse.jgit.transport.sshd; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.jgit.transport.sshd; bundle-symbolic-name="org.eclipse.jgit.ssh.apache"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; uses:="org.eclipse.jgit.transport,  org.apache.sshd.client.config.hosts,  org.apache.sshd.common.keyprovider,  org.eclipse.jgit.util,  org.apache.sshd.client.session,  org.apache.sshd.client.keyverifier"
+       org.eclipse.jgit.ssh.apache [287]
+         Unresolved requirement: Import-Package: net.i2p.crypto.eddsa; version="[0.3.0,0.4.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.ui 4 0 2020-04-12 15:12:31.913
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.egit.ui [201]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt.ui; bundle-version="[3.4.0,4.0.0)"; resolution:="optional"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.rebase; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.rebase; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+       org.eclipse.egit.core [199]
+         Unresolved requirement: Import-Package: org.eclipse.jgit.lfs; version="[5.3.0,5.4.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.jgit.transport.sshd; version="[5.3.0,5.4.0)"
+           -> Export-Package: org.eclipse.jgit.transport.sshd; bundle-symbolic-name="org.eclipse.jgit.ssh.apache"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; uses:="org.eclipse.jgit.transport,  org.apache.sshd.client.config.hosts,  org.apache.sshd.common.keyprovider,  org.eclipse.jgit.util,  org.apache.sshd.client.session,  org.apache.sshd.client.keyverifier"
+              org.eclipse.jgit.ssh.apache [287]
+                Unresolved requirement: Import-Package: net.i2p.crypto.eddsa; version="[0.3.0,0.4.0)"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize.dto; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.synchronize.dto; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.import,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.indexdiff; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.indexdiff; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.attributes; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.attributes; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; uses:="org.eclipse.jgit.lib"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.op; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.op; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui.test,  org.eclipse.egit.ui,  org.eclipse.egit.gitflow,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.egit.github.core,  org.eclipse.mylyn.github.ui,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.securestorage; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.securestorage; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.synchronize; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.synchronize; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.util; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.util; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,  org.eclipse.egit.ui.test,  org.eclipse.egit.mylyn.ui,  org.eclipse.egit.gitflow.test,  org.eclipse.egit.gitflow.ui,  org.eclipse.mylyn.github.ui,  org.eclipse.mylyn.github.core,  org.eclipse.egit.core.junit"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.storage; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.storage; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.core.test"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.project; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.project; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.ui.test,org.eclipse.egit.gitflow.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.gerrit; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.gerrit; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui"
+  Unresolved requirement: Import-Package: org.eclipse.egit.core.internal.job; version="[5.3.0,5.4.0)"
+    -> Export-Package: org.eclipse.egit.core.internal.job; bundle-symbolic-name="org.eclipse.egit.core"; bundle-version="5.3.0.201903130848-r"; version="5.3.0"; x-friends:="org.eclipse.egit.ui,org.eclipse.egit.gitflow.ui,org.eclipse.egit.gitflow"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.emf.edit.ui 4 0 2020-04-12 15:12:31.913
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.emf.edit.ui [209]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.jgit.ssh.apache 4 0 2020-04-12 15:12:32.086
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jgit.ssh.apache [287]
+  Unresolved requirement: Import-Package: net.i2p.crypto.eddsa; version="[0.3.0,0.4.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.jreinfo.ui 4 0 2020-04-12 15:12:32.116
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.jreinfo.ui [415]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+       org.eclipse.oomph.ui [436]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+              org.eclipse.emf.edit.ui [209]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.p2.ui 4 0 2020-04-12 15:12:32.136
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.p2.ui [420]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+       org.eclipse.oomph.ui [436]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+              org.eclipse.emf.edit.ui [209]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.setup.editor 4 0 2020-04-12 15:12:32.137
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup.editor [430]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.workingsets.editor; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.workingsets.editor; bundle-version="1.10.0.v20180904-1112"; singleton:="true"
+       org.eclipse.oomph.workingsets.editor [440]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+              org.eclipse.emf.edit.ui [209]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.setup.ui; bundle-version="[1.13.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.setup.ui; bundle-version="1.13.0.v20190511-0841"; singleton:="true"
+       org.eclipse.oomph.setup.ui [434]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.11.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+              org.eclipse.oomph.ui [436]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.p2.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.p2.ui; bundle-version="1.10.0.v20180829-1028"; singleton:="true"
+              org.eclipse.oomph.p2.ui [420]
+                Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.jreinfo.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.jreinfo.ui; bundle-version="1.10.0.v20180706-1242"; singleton:="true"
+              org.eclipse.oomph.jreinfo.ui [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.setup.ui 4 0 2020-04-12 15:12:32.137
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup.ui [434]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+       org.eclipse.emf.edit.ui [209]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.11.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+       org.eclipse.oomph.ui [436]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.p2.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.p2.ui; bundle-version="1.10.0.v20180829-1028"; singleton:="true"
+       org.eclipse.oomph.p2.ui [420]
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.jreinfo.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.jreinfo.ui; bundle-version="1.10.0.v20180706-1242"; singleton:="true"
+       org.eclipse.oomph.jreinfo.ui [415]
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.setup.ui.questionnaire 4 0 2020-04-12 15:12:32.137
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.setup.ui.questionnaire [435]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+       org.eclipse.oomph.ui [436]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+              org.eclipse.emf.edit.ui [209]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.setup.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.setup.ui; bundle-version="1.13.0.v20190511-0841"; singleton:="true"
+       org.eclipse.oomph.setup.ui [434]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.11.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.p2.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.p2.ui; bundle-version="1.10.0.v20180829-1028"; singleton:="true"
+              org.eclipse.oomph.p2.ui [420]
+                Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.oomph.jreinfo.ui; bundle-version="[1.10.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.oomph.jreinfo.ui; bundle-version="1.10.0.v20180706-1242"; singleton:="true"
+              org.eclipse.oomph.jreinfo.ui [415]
+                Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.ui 4 0 2020-04-12 15:12:32.164
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.ui [436]
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+       org.eclipse.emf.edit.ui [209]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.oomph.workingsets.editor 4 0 2020-04-12 15:12:32.164
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.oomph.workingsets.editor [440]
+  Unresolved requirement: Require-Bundle: org.eclipse.oomph.ui; bundle-version="[1.10.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.oomph.ui; bundle-version="1.11.0.v20190410-1549"; singleton:="true"
+       org.eclipse.oomph.ui [436]
+         Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+              org.eclipse.emf.edit.ui [209]
+                Unresolved requirement: Require-Bundle: org.eclipse.emf.common.ui; bundle-version="[2.15.0,3.0.0)"; visibility:="reexport"
+  Unresolved requirement: Require-Bundle: org.eclipse.emf.edit.ui; bundle-version="[2.10.0,3.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.emf.edit.ui; bundle-version="2.16.0.v20181104-0733"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.python.pydev.shared_core 1 1 2020-04-12 15:29:49.935
+!MESSAGE It seems it's already disposed...
+!STACK 0
+java.lang.RuntimeException: It seems it's already disposed...
+	at org.python.pydev.shared_core.log.Log.logInfo(Log.java:54)
+	at org.python.pydev.shared_ui.outline.BaseModel.setRoot(BaseModel.java:189)
+	at org.python.pydev.shared_ui.outline.BaseModel$1$1.run(BaseModel.java:68)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4582)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+
+!ENTRY org.eclipse.ui 4 0 2020-04-12 15:30:10.912
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:68)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler$1.run(UIEventObjectSupplier.java:67)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:147)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5927)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+	at org.eclipse.e4.ui.internal.di.UIEventObjectSupplier$UIEventHandler.handleEvent(UIEventObjectSupplier.java:64)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:349)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:113)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:194)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:205)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:258)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:115)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:95)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:474)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:468)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:500)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:259)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5783)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1411)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1437)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1416)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:220)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:5093)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4569)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1173)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:566)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:661)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1449)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.tm4e.ui.internal.menus.ThemeContribution.getContributionItems(ThemeContribution.java:59)
+	at org.eclipse.ui.actions.CompoundContributionItem.getContributionItemsToFill(CompoundContributionItem.java:83)
+	at org.eclipse.ui.actions.CompoundContributionItem.fill(CompoundContributionItem.java:57)
+	at org.eclipse.ui.internal.menus.DynamicMenuContributionItem.fill(DynamicMenuContributionItem.java:150)
+	at org.eclipse.jface.action.MenuManager.doItemFill(MenuManager.java:731)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:813)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:672)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1222)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.subscribeUIElementTopicAllRenderedVisibility(MenuManagerRenderer.java:203)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+	... 58 more
