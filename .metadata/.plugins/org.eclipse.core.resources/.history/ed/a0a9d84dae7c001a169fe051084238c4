@@ -17,7 +17,7 @@ parser.add_argument("filename")
 
 args = parser.parse_args()
 
-with open(args.filename) as f:
+with open("filename") as f:
     names_data = list(map(lambda x:x.replace("\t", " "), f.read().strip().split("\n"))) #readでファイル終端まで読み込み、stripで空白文字を削除する
 
 print(names_data)

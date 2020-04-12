@@ -10,13 +10,7 @@ import argparse
 if __name__ == '__main__':
     pass
 
-parser = argparse.ArgumentParser()
-
-parser.add_argument("filename")
-
-args = parser.parse_args()
-
-with open(args.filename) as f:
+with open("popular-names.txt") as f:
     names_data = list(map(lambda x:x.split("\t"), f.read().strip().split("\n"))) #readでファイル終端まで読み込み、stripで空白文字を削除する
 
 with open("col1.txt", mode="w") as f1:
