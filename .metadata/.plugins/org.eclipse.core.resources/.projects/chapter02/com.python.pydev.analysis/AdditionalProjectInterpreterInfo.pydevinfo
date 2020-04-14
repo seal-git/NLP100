@@ -1,26 +1,46 @@
 -- VERSION_5
 -- START DISKCACHE_2
 /home/seal0/eclipse-workspace/nlp100/.metadata/.plugins/org.eclipse.core.resources/.projects/chapter02/com.python.pydev.analysis/v2_indexcache
-11|1586670418877185000|/home/seal0/eclipse-workspace/nlp100/chapter02/11.py
-12|1586670418877185000|/home/seal0/eclipse-workspace/nlp100/chapter02/12.py
-13|1586670418877185000|/home/seal0/eclipse-workspace/nlp100/chapter02/13.py
-10|1586670418877185000|/home/seal0/eclipse-workspace/nlp100/chapter02/10.py
+11|1586857948597832000|/home/seal0/eclipse-workspace/nlp100/chapter02/11.py
+12|1586689884037063000|/home/seal0/eclipse-workspace/nlp100/chapter02/12.py
+13|1586673158691514000|/home/seal0/eclipse-workspace/nlp100/chapter02/13.py
+14|1586869283145501000|/home/seal0/eclipse-workspace/nlp100/chapter02/14.py
+15|1586870385955403000|/home/seal0/eclipse-workspace/nlp100/chapter02/15.py
+16|1586880757275087000|/home/seal0/eclipse-workspace/nlp100/chapter02/16.py
+17|1586882065258045000|/home/seal0/eclipse-workspace/nlp100/chapter02/17.py
+10|1586689659112091000|/home/seal0/eclipse-workspace/nlp100/chapter02/10.py
 -- END DISKCACHE
 -- START DICTIONARY
-8
-6=11
-1=/home/seal0/eclipse-workspace/nlp100/chapter02/13.py
-3=/home/seal0/eclipse-workspace/nlp100/chapter02/12.py
-4=12
-2=13
-5=/home/seal0/eclipse-workspace/nlp100/chapter02/11.py
+16
+10=11
+14=12
+16=13
+4=14
+6=15
+2=16
+12=17
+1=/home/seal0/eclipse-workspace/nlp100/chapter02/16.py
+11=/home/seal0/eclipse-workspace/nlp100/chapter02/17.py
+13=/home/seal0/eclipse-workspace/nlp100/chapter02/12.py
+15=/home/seal0/eclipse-workspace/nlp100/chapter02/13.py
+3=/home/seal0/eclipse-workspace/nlp100/chapter02/14.py
+5=/home/seal0/eclipse-workspace/nlp100/chapter02/15.py
+9=/home/seal0/eclipse-workspace/nlp100/chapter02/11.py
 7=/home/seal0/eclipse-workspace/nlp100/chapter02/10.py
 8=10
 -- END DICTIONARY
 -- START TREE 1
-2
-col|3|col2!1^15#5*19@col1_and_col2!1^17#1*19@col1!1^12#5*19@
-nam|3|names_data!3^12#5*35@names_data!5^12#5*51@names_data!7^9#5*67@
+10
+N|1|N!1^25#1*19@
+arg|7|args!3^19#1*35@args!5^19#1*51@args!7^13#1*67@args!1^19#1*19@args!9^18#1*83@args!11^17#1*99@args!13^17#1*115@
+col|3|col2!15^15#5*131@col1_and_col2!15^17#1*131@col1!15^12#5*131@
+l|1|l!1^29#1*19@
+nam|3|names_data!13^20#5*115@names_data!9^21#5*83@names_data!7^17#5*67@
+new|1|new_text!11^24#1*99@
+par|7|parser!13^13#1*115@parser!11^13#1*99@parser!1^13#1*19@parser!9^14#1*83@parser!7^9#1*67@parser!5^13#1*51@parser!3^13#1*35@
+tes|0|
+tet|0|
+tex|4|text!1^22#5*19@text!11^20#5*99@text!5^22#5*51@text!3^22#5*35@
 -- END TREE
 -- START TREE 2
 0

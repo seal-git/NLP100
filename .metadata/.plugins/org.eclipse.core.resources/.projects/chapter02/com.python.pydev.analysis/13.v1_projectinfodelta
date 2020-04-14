@@ -1,6 +1,10 @@
-INSTUP12
-/home/seal0/eclipse-workspace/nlp100/chapter02/12.py
-INFOS:&&3|1|2|0|3|12|5
-12=2
-/home/seal0/eclipse-workspace/nlp100/chapter02/12.py=3
-names_data=1
+INSTUP17
+/home/seal0/eclipse-workspace/nlp100/chapter02/17.py
+INFOS:&&3|1|2|0|3|13|1&&3|4|2|0|3|17|1&&3|5|2|0|3|20|5&&3|6|2|0|3|22|1&&3|7|2|0|3|23|1
+args=4
+parser=1
+new_text=7
+17=2
+names_data=5
+/home/seal0/eclipse-workspace/nlp100/chapter02/17.py=3
+text=6
